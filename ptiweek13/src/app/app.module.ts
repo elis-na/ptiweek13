@@ -12,7 +12,6 @@ import { CountdownModule } from 'ngx-countdown';
   imports: [ 
     BrowserModule, 
     AppRoutingModule,
-    HttpClientModule,
     CountdownModule
   ],
   providers: [],
