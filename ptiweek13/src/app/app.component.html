@@ -530,5 +530,20 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+<countdown [config] = "{leftTime: 20}"></countdown>
+
+<br>
+<br>
+
+<countdown #countdown [config]="{leftTime: 30, demand: true}"></countdown>
+
+<button onclick ="countdown.resume()">Start</button>
+
+<countdown #cd1 [config] = "{leftTime: 30}" ></countdown>
+
+<button onclick ="cd1.resume()">Resume</button>
+<button onclick ="cd1.stop()">Stop</button>
+<button onclick ="cd1.pause()">Pause</button>
+<button onclick ="cd1.restart()">Restart</button>
 
 <router-outlet></router-outlet>
